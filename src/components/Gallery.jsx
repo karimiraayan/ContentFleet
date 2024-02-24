@@ -11,7 +11,9 @@ function GenerateCols(numberOfCols, images) {
         {images.map((image, index) => {
           if (index % numberOfCols === i) {
             return (
-              <div className="gallery-item" key={image.id}>
+              <div className="gallery-item" key={image.id}
+              onClick={() => window.open(image.links.html, "_blank")}
+              >
                 <img src={image.urls.small} alt={image.alt_description} />
               </div>
             );

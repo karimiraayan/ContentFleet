@@ -139,16 +139,22 @@ nav {
       }
     }
     @media screen and (min-width: 768px) {
-      .row {
-        display: none !important;
+      .menu{
+        display: none;
+      }
+      .logo{
+        text-align: left !important;
+        margin-left: 40px;
       }
       ul {
+        display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: 50px;
-        margin: 0;
+        margin: -75px;
         li {
+          margin: 0;
           width: fit-content;
           a {
             text-decoration: underline;
