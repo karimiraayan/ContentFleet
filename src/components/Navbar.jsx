@@ -24,13 +24,13 @@ export default function Navbar() {
           </div>
         </div>
         <ul>
-          <li>
+          <li onClick={()=>setIsOpen(false)}>
             <a href="#home">Home</a>
           </li>
-          <li>
+          <li onClick={()=>setIsOpen(false)}>
             <a href="#gallery">Gallery</a>
           </li>
-          <li>
+          <li onClick={()=>setIsOpen(false)}>
             <a href="#footer">Contact</a>
           </li>
 
