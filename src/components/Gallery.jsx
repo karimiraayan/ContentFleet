@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 const API_URL = import.meta.env.VITE_IMAGE_API_URL;
 const screenWidth = window.innerWidth;
 
@@ -34,6 +35,10 @@ export default function Gallery() {
   }, []);
   return (
     <main id="gallery">
+      <Helmet>
+        <title>Photo Gallery</title>
+        <meta name="description" content="Browse through our beautiful photo gallery showcasing stunning images." />
+      </Helmet>
       <h1>Gallery</h1>
       <div className="gallery-container">
         {screenWidth < 768
