@@ -37,10 +37,13 @@ export default function Gallery() {
     <main id="gallery">
       <Helmet>
         <title>Photo Gallery</title>
-        <meta name="description" content="Browse through our beautiful photo gallery showcasing stunning images." />
+        <meta
+          name="description"
+          content="Browse through our beautiful photo gallery showcasing stunning images."
+        />
       </Helmet>
       <h1>Gallery</h1>
-      <div className="gallery-container">
+      <div className="gallery-container" role="list of Images">
         {screenWidth < 768
           ? GenerateCols(2, images)
           : screenWidth < 1024
