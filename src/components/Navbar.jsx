@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <nav className={`${isOpen ? "open" : "close"}`}>
       <div className="inner-layout">
-        <div className="row-1">
+        <div className="row">
           <div className="menu cross menu--1">
             <label>
               <input
