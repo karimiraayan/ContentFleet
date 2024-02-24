@@ -25,6 +25,44 @@
   }
   
 }
+#gallery {
+  background-color: $gallery-background-color;
+  padding: 20px 5px;
+  h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: $primary-text-color;
+    margin-bottom: 15px;
+  }
+  p {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: $primary-text-color;
+  }
+}
+.gallery-container {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+
+  .gallery-col{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: hidden;
+    gap: 5px;
+    .gallery-item{
+        position: relative;
+        display: flex;
+        object-fit: cover;
+        img{
+            object-fit: cover; 
+        }
+    }
+  }
+}
 
 .open {
   height: 300px;
