@@ -189,3 +189,13 @@ label circle {
     }
   }
 }
+.text-center {
+  text-align: center;
+}
+footer {
+  padding: 10px;
+  background-color: $footer-background-color;
+  text-align: center;
+  color: $primary-text-color;
+  font-size: 1.2rem;
+}
