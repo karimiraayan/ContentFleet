@@ -15,9 +15,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
-
-
 #home {
   background-color: $home-background-color;
   height: 500px;
@@ -142,9 +139,12 @@ nav {
       .menu{
         display: none;
       }
-      .logo{
-        text-align: left !important;
-        margin-left: 40px;
+      .row{
+        .logo{
+          text-align: left;
+          margin-left: 40px;
+          width: fit-content;
+        }
       }
       ul {
         display: flex;
